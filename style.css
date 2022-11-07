@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+mod()
+step() conditionals
+abs()
+min()
+max()
+round()
+floor()
+
+There is no native Math.random in GLSL.
+
+
+gl_FragColor  = vec4(vUv, 1.0, 1.0); // 1
+gl_FragColor  = vec4(vUv, 0.0, 1.0); // 2
+
+float strength = vUv.x;
+gl_FragColor = vec4(vec3(strength), 1.0); // 3
+
+float strength = vUv.y;
+gl_FragColor = vec4(vec3(strength), 1.0); // 4
+
+float strength = 1.0 - vUv.y;
+gl_FragColor = vec4(vec3(strength), 1.0); // 5
+
+float strength = vUv.y * 10.0;
+gl_FragColor = vec4(vec3(strength), 1.0); // 6
+
+float strength = mod(vUv.y * 10.0, 1.0);
+gl_FragColor = vec4(vec3(strength), 1.0); // 7 mod's second arg is limit
+
+float strength = mod(vUv.y * 10.0, 1.0);
+strength = step(0.5, strength);
+gl_FragColor = vec4(vec3(strength), 1.0); // 8 conditions are bad for performance
+
+float strength = mod(vUv.y * 10.0, 1.0);
+strength = step(0.2, strength); 
+gl_FragColor = vec4(vec3(strength), 1.0); // 9 tweak the step's limit value.
+
+float strength = mod(vUv.x * 10.0, 1.0);
+strength = step(0.2, strength); 
+gl_FragColor = vec4(vec3(strength), 1.0); // 10
+
+float strength = mod(vUv.x * 10.0, 1.0);
+strength = step(0.2, strength); 
+gl_FragColor = vec4(vec3(strength), 1.0); // 10
+
+
+
+
+
+*/
